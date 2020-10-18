@@ -49,6 +49,9 @@ if (goto_links) {
 		goto_link.addEventListener('click', function (e) {
 			let target_block_class = goto_link.getAttribute('href').replace('#', '');
 			let target_block = document.querySelector('.' + target_block_class);
+			document.querySelector(".icon-menu").classList.toggle("_active");
+			document.querySelector(".menu__body").classList.toggle("_active");
+			document.querySelector(".header").classList.toggle("_active");
 			_goto(target_block, 300);
 			e.preventDefault();
 		});
