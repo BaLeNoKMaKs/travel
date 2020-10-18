@@ -1,7 +1,3 @@
-function email_test(input) {
-	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-};
-;
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
@@ -552,7 +548,7 @@ animate({
 			Element.prototype.mozMatchesSelector ||
 			Element.prototype.msMatchesSelector;
 	}
-})();;
+})();
 //BuildSlider
 let sliders = document.querySelectorAll('._swiper');
 if (sliders) {
@@ -643,7 +639,7 @@ let sliderRight = new Swiper('.photo-slider', {
 	  swiper: sliderLeft
 	}
  });
-;
+
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
@@ -1061,7 +1057,7 @@ if (quantityButtons.length > 0) {
 			quantityButton.closest('.quantity').querySelector('input').value = value;
 		});
 	}
-};
+}
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
 // e.x. data-da="item,2,992"
@@ -1198,4 +1194,6 @@ if (quantityButtons.length > 0) {
 	function customAdapt() {
 		//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	}
-}());;
+}());
+$(".parallax__list").parallax();
+
